@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".childEducation"
+    android:background="#FFEB3B">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:hint="Clients Name"
+        android:layout_margin="4dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:hint="D.O.B"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et1"
+        android:textStyle="bold"
+        android:inputType="date"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3"
+        android:hint="Term"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et2"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et4"
+        android:hint="Frequency"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et3"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et5"
+        android:hint="Sum Assured"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et4"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et6"
+        android:hint="Basic Premium"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et5"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et7"
+        android:hint="Annual Premium"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et6"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et8"
+        android:hint="Bonus Estimate"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et7"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et9"
+        android:hint="Maturity Estimate"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et8"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:text="Add Rider"
+        android:layout_margin="4dp"
+        android:layout_below="@id/et9"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:text="Accidental Death benefit"
+        android:id="@+id/rbtn1"/>
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbtn1"
+        android:text="Accidental Death benefit"
+        android:id="@+id/rbtn2"/>
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbtn2"
+        android:text="Accidental Death benefit"
+        android:id="@+id/rbtn3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:layout_marginLeft="250dp"
+        android:text="PRODUCT   BY"
+        android:id="@+id/tv"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="240dp"
+
+        app:srcCompat="@drawable/ic_baseline_announcement_24"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:text="Calculate"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/rbtn3"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:text="Email Quote"
+
+        android:layout_below="@id/rbtn3"
+        android:textStyle="bold"
+        android:layout_marginLeft="230dp"/>
+</RelativeLayout>
